@@ -118,16 +118,17 @@ class Homepage extends StatelessWidget {
             height: 50,
             width: double.infinity,
             child: Card(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const ListTile(
-                          title: Text('Matematika'),
-                          subtitle: Text('Bangun Ruang'),
-                        ),
-                      ],
-                    ),
-                  )),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    title: Text('Matematika'),
+                    subtitle: Text('Bangun Ruang'),
+                  ),
+                ],
+              ),
+// child: Align(alignment: Alignment.centerLeft, child: Text("Edit Profile")),
+            ),
           ),
         )
       ],
