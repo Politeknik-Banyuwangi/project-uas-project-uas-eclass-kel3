@@ -30,7 +30,13 @@ class Homepage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Matematika", style: TextStyle(fontSize: 15)))
+                      Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            "Matematika",
+                            style: TextStyle(fontSize: 15),
+                            textAlign: TextAlign.center,
+                          ))
                     ],
                   )),
               Expanded(
@@ -81,7 +87,13 @@ class Homepage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Fisika", style: TextStyle(fontSize: 15)))
+                      Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            "Fisika",
+                            style: TextStyle(fontSize: 15),
+                            textAlign: TextAlign.center,
+                          ))
                     ],
                   )),
             ],
@@ -106,7 +118,13 @@ class Homepage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Asuransi", style: TextStyle(fontSize: 17)))
+                      Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            "Asuransi",
+                            style: TextStyle(fontSize: 17),
+                            textAlign: TextAlign.center,
+                          ))
                     ],
                   )),
             ],
