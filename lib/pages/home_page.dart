@@ -110,21 +110,18 @@ class Homepage extends StatelessWidget {
           padding: const EdgeInsets.only(top: 10),
           child: Row(
             children: [
-              Container(
-                  width: 150,
-                  height: 150,
-                  child: Card(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          leading: Icon(Icons.album, size: 45),
-                          title: Text('Sonu Nigam'),
-                          subtitle: Text('Best of Sonu Nigam Song'),
-                        ),
-                      ],
+              Card(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    const ListTile(
+                      leading: Icon(Icons.album, size: 45),
+                      title: Text('Sonu Nigam'),
+                      subtitle: Text('Best of Sonu Nigam Song'),
                     ),
-                  ))
+                  ],
+                ),
+              )
             ],
           ),
         ),
