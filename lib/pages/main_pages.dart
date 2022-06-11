@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projectuas/pages/sign_in_pages.dart';
+import 'package:projectuas/themes/theme.dart';
 
 class MainPage extends StatefulWidget {
   MainPage({Key? key}) : super(key: key);
@@ -16,7 +18,11 @@ class MainPageState extends State<MainPage> {
     });
   }
 
-  final List<Widget> page = [];
+  final List<Widget> page = [
+    SignInPages(),
+    SignInPages(),
+    SignInPages(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -39,8 +45,8 @@ class MainPageState extends State<MainPage> {
         ],
         currentIndex: _selectedNavbar,
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: kPrimaryColor,
-        unselectedItemColor: kGreyColor1,
+        selectedItemColor: primaryYellowColor,
+        unselectedItemColor: Colors.grey,
         showUnselectedLabels: true,
         onTap: _changeSelectedNavbar,
       ),
