@@ -6,7 +6,7 @@ class Homepage extends StatelessWidget {
     return Scaffold(
         body: Column(
       children: [
-        Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Pulsa", style: TextStyle(fontSize: 17))),
+        Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Kelasku", style: TextStyle(fontSize: 17), textAlign: TextAlign.center)),
         Padding(
           padding: const EdgeInsets.only(top: 25),
           child: Row(
