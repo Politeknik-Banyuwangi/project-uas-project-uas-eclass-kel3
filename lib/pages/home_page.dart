@@ -110,7 +110,10 @@ class Homepage extends StatelessWidget {
           padding: const EdgeInsets.only(top: 10),
           child: Row(
             children: [
-              Card(  
+              Container(  
+    width: 150,  
+    height: 150,  
+    child: Card(  
     child: Column(  
       mainAxisSize: MainAxisSize.min,  
       children: <Widget>[  
@@ -122,6 +125,7 @@ class Homepage extends StatelessWidget {
       ],  
     ),  
   );  
+  )  
             ],
           ),
         ),
