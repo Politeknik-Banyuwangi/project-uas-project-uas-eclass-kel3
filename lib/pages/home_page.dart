@@ -26,14 +26,11 @@ class Homepage extends StatelessWidget {
                         onPressed: () {},
                         color: Colors.white,
                         textColor: Colors.green,
-                        child: Icon(
-                          Icons.phone_android,
-                          size: 20,
-                        ),
+                        child: Text("MTK", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Pulsa", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Matematika", style: TextStyle(fontSize: 17)))
                     ],
                   )),
               Expanded(
