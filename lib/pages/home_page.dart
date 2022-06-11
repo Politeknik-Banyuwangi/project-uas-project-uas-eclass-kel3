@@ -25,7 +25,7 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.green,
+                        textColor: Colors.grey,
                         child: Text("MTK", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
@@ -40,7 +40,7 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.blue,
+                        textColor: Colors.grey,
                         child: Text("ENG", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
@@ -55,7 +55,22 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.red,
+                        textColor: Colors.grey,
+                        child: Text("FSA", style: TextStyle(fontSize: 17)),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Fisika", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.grey,
                         child: Text("IDN", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
