@@ -113,36 +113,15 @@ class Homepage extends StatelessWidget {
               textAlign: TextAlign.left,
             )),
         Padding(
-          padding: const EdgeInsets.only(top: 10),
-          child: Row(
-            children: [
-              Container(
-                  height: 120,
-                  width: 330,
-                  child: Card(
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        const ListTile(
-                          title: Text('Matematika'),
-                          subtitle: Text('Bangun Ruang'),
-                        ),
-                      ],
-                    ),
-                  )),
-              Padding(
-                padding: EdgeInsets.all(20),
-                child: Container(
-                  height: 50,
-                  width: double.infinity,
-                  child: Card(
-                    child: Align(alignment: Alignment.centerLeft, child: Text("Edit Profile")),
-                  ),
-                ),
-              )
-            ],
+          padding: EdgeInsets.all(20),
+          child: Container(
+            height: 50,
+            width: double.infinity,
+            child: Card(
+              child: Align(alignment: Alignment.centerLeft, child: Text("Edit Profile")),
+            ),
           ),
-        ),
+        )
       ],
     ));
   }
