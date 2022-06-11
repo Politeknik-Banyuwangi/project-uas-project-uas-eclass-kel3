@@ -77,7 +77,7 @@ class Homepage extends StatelessWidget {
                           child: Text(
                             "Bahasa Indonesia",
                             style: TextStyle(fontSize: 15),
-                            textAlign: TextAlign.left,
+                            textAlign: TextAlign.c,
                           ))
                     ],
                   )),
