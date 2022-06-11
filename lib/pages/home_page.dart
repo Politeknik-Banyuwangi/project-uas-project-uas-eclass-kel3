@@ -6,12 +6,19 @@ class Homepage extends StatelessWidget {
     return Scaffold(
         body: Column(
       children: [
+        Container(
+          color: Colors.red,
+          child: Text(
+            "Should be left",
+            textAlign: TextAlign.left,
+          ),
+        ),
         Padding(
             padding: const EdgeInsets.only(top: 10.0),
             child: Text(
               "Kelasku",
               style: TextStyle(fontSize: 17),
-              alignment: Alignment.centerLeft,
+              textAlign: TextAlign.left,
             )),
         Padding(
           padding: const EdgeInsets.only(top: 25),
