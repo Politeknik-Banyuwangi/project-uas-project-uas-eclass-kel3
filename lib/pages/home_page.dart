@@ -122,7 +122,7 @@ class Homepage extends StatelessWidget {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
+                  // mainAxisSize: MainAxisSize.min,
                   children: [
                     const ListTile(
                       title: Text(
