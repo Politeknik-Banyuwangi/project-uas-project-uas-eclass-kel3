@@ -108,7 +108,7 @@ class Homepage extends StatelessWidget {
             )),
         Padding(
           padding: const EdgeInsets.only(top: 10),
-          child: Row(
+          child: Column(
             children: [
               Container(
                 decoration: BoxDecoration(
