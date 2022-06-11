@@ -8,7 +8,7 @@ class Homepage extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       children: [
         Padding(
-            padding: const EdgeInsets.only(top: 10.0),
+            padding: const EdgeInsets.only(top: 7),
             child: Text(
               "Kelasku",
               style: TextStyle(fontSize: 17),
