@@ -126,7 +126,7 @@ class Homepage extends StatelessWidget {
                     const ListTile(
                       title: Text(
                         'Matematika',
-                        style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold, color: Colors.white),
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                       ),
                       subtitle: Text(
                         'Bangun Ruang',
