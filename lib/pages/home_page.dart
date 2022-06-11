@@ -129,7 +129,17 @@ class Homepage extends StatelessWidget {
                         ),
                       ],
                     ),
-                  ))
+                  )),
+              Padding(
+                padding: EdgeInsets.all(20),
+                child: Container(
+                  height: 50,
+                  width: double.infinity,
+                  child: Card(
+                    child: Align(alignment: Alignment.centerLeft, child: Text("Edit Profile")),
+                  ),
+                ),
+              )
             ],
           ),
         ),
