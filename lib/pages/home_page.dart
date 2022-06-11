@@ -110,48 +110,6 @@ class Homepage extends StatelessWidget {
           padding: const EdgeInsets.only(top: 10),
           child: Row(
             children: [
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.green,
-                        child: Text("MTK", style: TextStyle(fontSize: 17)),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(
-                          padding: const EdgeInsets.only(top: 10.0),
-                          child: Text(
-                            "Matematika",
-                            style: TextStyle(fontSize: 15),
-                            textAlign: TextAlign.center,
-                          ))
-                    ],
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.blue,
-                        child: Text("ENG", style: TextStyle(fontSize: 17)),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(
-                          padding: const EdgeInsets.only(top: 10.0),
-                          child: Text(
-                            "Bahasa Inggris",
-                            style: TextStyle(fontSize: 15),
-                            textAlign: TextAlign.center,
-                          ))
-                    ],
-                  )),
               Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
