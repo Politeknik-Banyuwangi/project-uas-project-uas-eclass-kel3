@@ -115,14 +115,14 @@ class Homepage extends StatelessWidget {
         Padding(
           padding: EdgeInsets.all(20),
           child: Container(
-            height: 50,
+            height: 100,
             width: double.infinity,
             child: Card(
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
+                  children: [
                     const ListTile(
                       title: Text('Matematika'),
                       subtitle: Text('Bangun Ruang'),
