@@ -45,7 +45,13 @@ class Homepage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Inggris", style: TextStyle(fontSize: 15)))
+                      Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            "Bahasa Inggris",
+                            style: TextStyle(fontSize: 15),
+                            textAlign: TextAlign.center,
+                          ))
                     ],
                   )),
               Expanded(
