@@ -13,6 +13,7 @@ class Homepage extends StatelessWidget {
               "Kelasku",
               style: TextStyle(fontSize: 17),
               textAlign: TextAlign.left,
+              fontWeight: FontWeight.bold,
             )),
         Padding(
           padding: const EdgeInsets.only(top: 10),
