@@ -15,7 +15,7 @@ class Homepage extends StatelessWidget {
               textAlign: TextAlign.left,
             )),
         Padding(
-          padding: const EdgeInsets.only(top: 15),
+          padding: const EdgeInsets.only(top: 10),
           child: Row(
             children: [
               Expanded(
