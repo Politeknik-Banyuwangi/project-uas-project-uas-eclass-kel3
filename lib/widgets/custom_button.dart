@@ -19,7 +19,9 @@ class CustomPrimaryButton extends StatelessWidget {
       child: Container(
         height: 56,
         decoration: BoxDecoration(
-            color: buttonColor, borderRadius: BorderRadius.circular(14)),
+          color: buttonColor,
+          borderRadius: BorderRadius.circular(14),
+        ),
         child: Material(
           color: Colors.transparent,
           child: InkWell(
