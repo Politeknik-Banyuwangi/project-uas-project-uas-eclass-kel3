@@ -106,7 +106,7 @@ class Homepage extends StatelessWidget {
           ),
         ),
         Padding(
-            padding: const EdgeInsets.only(top: 20),
+            padding: const EdgeInsets.only(top: 25),
             child: Text(
               "Daftar Tugas",
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
