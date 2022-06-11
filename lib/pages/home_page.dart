@@ -122,12 +122,11 @@ class Homepage extends StatelessWidget {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Column(
-                  // mainAxisSize: MainAxisSize.min,
                   children: [
                     const ListTile(
                       title: Text(
                         'Matematika',
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+                        style: TextStyle(fontSize: 25, color: Colors.white),
                       ),
                       subtitle: Text(
                         'Bangun Ruang',
