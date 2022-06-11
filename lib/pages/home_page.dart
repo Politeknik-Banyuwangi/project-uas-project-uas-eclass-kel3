@@ -100,7 +100,14 @@ class Homepage extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 25),
+            padding: const EdgeInsets.only(top: 10.0),
+            child: Text(
+              "Kelasku",
+              style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.left,
+            )),
+        Padding(
+          padding: const EdgeInsets.only(top: 10),
           child: Row(
             children: [
               Expanded(
@@ -110,26 +117,80 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.red,
-                        child: Icon(
-                          Icons.health_and_safety,
-                          size: 20,
-                        ),
+                        textColor: Colors.green,
+                        child: Text("MTK", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
                       Padding(
                           padding: const EdgeInsets.only(top: 10.0),
                           child: Text(
-                            "Asuransi",
-                            style: TextStyle(fontSize: 17),
+                            "Matematika",
+                            style: TextStyle(fontSize: 15),
+                            textAlign: TextAlign.center,
+                          ))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.blue,
+                        child: Text("ENG", style: TextStyle(fontSize: 17)),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            "Bahasa Inggris",
+                            style: TextStyle(fontSize: 15),
+                            textAlign: TextAlign.center,
+                          ))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.red,
+                        child: Text("IDN", style: TextStyle(fontSize: 17)),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Indonesia", style: TextStyle(fontSize: 15)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.orange,
+                        child: Text("FSA", style: TextStyle(fontSize: 17)),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(
+                          padding: const EdgeInsets.only(top: 10.0),
+                          child: Text(
+                            "Fisika",
+                            style: TextStyle(fontSize: 15),
                             textAlign: TextAlign.center,
                           ))
                     ],
                   )),
             ],
           ),
-        )
+        ),
       ],
     ));
   }
