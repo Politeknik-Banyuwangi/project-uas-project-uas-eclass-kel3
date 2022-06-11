@@ -25,7 +25,7 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.grey,
+                        textColor: Colors.green,
                         child: Text("MTK", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
@@ -40,7 +40,7 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.grey,
+                        textColor: Colors.blue,
                         child: Text("ENG", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
@@ -55,12 +55,12 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.grey,
-                        child: Text("FSA", style: TextStyle(fontSize: 17)),
+                        textColor: Colors.red,
+                        child: Text("IDN", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Fisika", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Indonesia", style: TextStyle(fontSize: 17)))
                     ],
                   )),
               Expanded(
@@ -70,12 +70,12 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.grey,
-                        child: Text("IDN", style: TextStyle(fontSize: 17)),
+                        textColor: Colors.red,
+                        child: Text("FSA", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Indonesia", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Fisika", style: TextStyle(fontSize: 17)))
                     ],
                   )),
             ],
