@@ -8,14 +8,14 @@ class Homepage extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       children: [
         Padding(
-            padding: const EdgeInsets.only(top: 5),
+            padding: const EdgeInsets.only(top: 10.0),
             child: Text(
               "Kelasku",
               style: TextStyle(fontSize: 17),
               textAlign: TextAlign.left,
             )),
         Padding(
-          padding: const EdgeInsets.only(top: 25),
+          padding: const EdgeInsets.only(top: 15),
           child: Row(
             children: [
               Expanded(
