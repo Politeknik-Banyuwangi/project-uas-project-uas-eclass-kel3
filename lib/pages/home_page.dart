@@ -6,13 +6,6 @@ class Homepage extends StatelessWidget {
     return Scaffold(
         body: Column(
       children: [
-        Container(
-          color: Colors.red,
-          child: Text(
-            "Should be left",
-            textAlign: TextAlign.left,
-          ),
-        ),
         Padding(
             padding: const EdgeInsets.only(top: 10.0),
             child: Text(
@@ -137,78 +130,6 @@ class Homepage extends StatelessWidget {
                         shape: CircleBorder(),
                       ),
                       Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Asuransi", style: TextStyle(fontSize: 17)))
-                    ],
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.blue,
-                        child: Icon(
-                          Icons.money,
-                          size: 20,
-                        ),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Investasi", style: TextStyle(fontSize: 17)))
-                    ],
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.green,
-                        child: Icon(
-                          Icons.person,
-                          size: 20,
-                        ),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("BPJS", style: TextStyle(fontSize: 17)))
-                    ],
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.green,
-                        child: Icon(
-                          Icons.shop_2,
-                          size: 20,
-                        ),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Ecomrsc", style: TextStyle(fontSize: 17)))
-                    ],
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.blue,
-                        child: Icon(
-                          Icons.all_inclusive_outlined,
-                          size: 20,
-                        ),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Lainnya", style: TextStyle(fontSize: 17)))
                     ],
                   )),
             ],
