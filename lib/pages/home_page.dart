@@ -30,7 +30,7 @@ class Homepage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Matematika", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Matematika", style: TextStyle(fontSize: 15)))
                     ],
                   )),
               Expanded(
@@ -45,7 +45,7 @@ class Homepage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Inggris", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Inggris", style: TextStyle(fontSize: 15)))
                     ],
                   )),
               Expanded(
@@ -60,7 +60,7 @@ class Homepage extends StatelessWidget {
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Indonesia", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Indonesia", style: TextStyle(fontSize: 15)))
                     ],
                   )),
               Expanded(
@@ -70,12 +70,12 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.red,
+                        textColor: Colors.orange,
                         child: Text("FSA", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Fisika", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Fisika", style: TextStyle(fontSize: 15)))
                     ],
                   )),
             ],
