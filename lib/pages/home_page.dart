@@ -4,172 +4,203 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: DefaultTabController(
-        length: 3,
-        child: NestedScrollView(
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-            return <Widget>[
-              SliverAppBar(
-                expandedHeight: 200.0,
-                floating: false,
-                pinned: true,
-                flexibleSpace: FlexibleSpaceBar(
-                  centerTitle: true,
-                  title: Text("Music - SliverAppBar",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20.0,
-                      )),
-                  background: Image(
-                    image: AssetImage('assets/img/galaxy.png'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              SliverPersistentHeader(
-                pinned: true,
-                // padding: new EdgeInsets.all(10.0),
-                //
-                delegate: _SliverAppBarDelegate(
-                  TabBar(
-                    labelColor: Colors.black87,
-                    unselectedLabelColor: Colors.grey,
-                    tabs: [
-                      new Tab(icon: new Icon(Icons.audiotrack), text: "Songs"),
-                      new Tab(icon: new Icon(Icons.collections), text: "Gallery"),
-                      new Tab(icon: new Icon(Icons.playlist_play), text: "Playlist"),
-                    ],
-                  ),
-                ),
-              ),
-            ];
-          },
-
-          body: TabBarView(
+        body: Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 25),
+          child: Row(
             children: [
-              FirstScreen(),
-              SecondScreen(),
-              ThirdScreen()
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.green,
+                        child: Icon(
+                          Icons.phone_android,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Pulsa", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.blue,
+                        child: Icon(
+                          Icons.water,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("PDAM", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.yellow,
+                        child: Icon(
+                          Icons.light_sharp,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Listrik", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.blue,
+                        child: Icon(
+                          Icons.gamepad,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Game", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.red,
+                        child: Icon(
+                          Icons.money_outlined,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Donasi", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
             ],
           ),
-          // body: Center(
-          //   child: Text("belajar app bar"),
-          // if(tab) ?
-          // child: Text("belajar app bar")
-          // :
-          // child: Text("belajar app bar"),
-          // ),
         ),
-      ),
-    );
-  }
-}
-
-final List<String> entriSatu = <String>[
-  'Lagu satu',
-  'Lagu dua',
-  'Lagu tiga',
-  'Lagu empat',
-  'Lagu lima',
-  'Lagu enam',
-  'Lagu tujuh',
-  'Lagu delapan',
-  'Lagu sembilan',
-  'Lagu sepuluh',
-  'Lagu sebelas',
-  'Lagu duabelas',
-];
-
-class FirstScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: ListView.builder(
-              padding: const EdgeInsets.all(15),
-              itemCount: entriSatu.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Container(
-                  height: 50,
-                  child: Text('${entriSatu[index]}', style: TextStyle(fontSize: 15.0)),
-                );
-              }),
-        ));
-  }
-}
-
-class SecondScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: GridView.count(
-            // crossAxisSpacing: 5,
-            // mainAxisSpacing: 5,
-            crossAxisCount: 2,
-            children: List.generate(10, (index) {
-              return Container(
-                margin: EdgeInsets.all(7),
-                child: Container(
-                  alignment: Alignment.bottomCenter,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage('assets/img/fatwa.jpg'),
-                      fit: BoxFit.cover,
-                    ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
-              );
-            }),
+        Padding(
+          padding: const EdgeInsets.only(top: 25),
+          child: Row(
+            children: [
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.red,
+                        child: Icon(
+                          Icons.health_and_safety,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Asuransi", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.blue,
+                        child: Icon(
+                          Icons.money,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Investasi", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.green,
+                        child: Icon(
+                          Icons.person,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("BPJS", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.green,
+                        child: Icon(
+                          Icons.shop_2,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Ecomrsc", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Column(
+                    children: [
+                      MaterialButton(
+                        onPressed: () {},
+                        color: Colors.white,
+                        textColor: Colors.blue,
+                        child: Icon(
+                          Icons.all_inclusive_outlined,
+                          size: 20,
+                        ),
+                        padding: EdgeInsets.all(20),
+                        shape: CircleBorder(),
+                      ),
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Lainnya", style: TextStyle(fontSize: 17)))
+                    ],
+                  )),
+            ],
           ),
-        ));
-  }
-}
-
-final List<String> entriTiga = <String>[
-  'Playlist satu',
-  'Playlist dua',
-  'Playlist tiga',
-  'Playlist empat',
-  'Playlist lima',
-];
-
-class ThirdScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: ListView.builder(
-              padding: const EdgeInsets.all(15),
-              itemCount: entriTiga.length,
-              itemBuilder: (BuildContext context, int index) {
-                return Container(
-                  height: 50,
-                  child: Text('${entriTiga[index]}', style: TextStyle(fontSize: 15.0)),
-                );
-              }),
-        ));
-  }
-}
-
-class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
-  _SliverAppBarDelegate(this._tabBar);
-  final TabBar _tabBar;
-
-  double get minExtent => _tabBar.preferredSize.height;
-  double get maxExtent => _tabBar.preferredSize.height;
-
-  Widget build(BuildContext context, double shrinkOffset, bool overlabsContents) {
-    return new Container(
-      child: _tabBar,
-    );
-  }
-
-  bool shouldRebuild(_SliverAppBarDelegate oldDelegate) {
-    return false;
+        )
+      ],
+    ));
   }
 }
