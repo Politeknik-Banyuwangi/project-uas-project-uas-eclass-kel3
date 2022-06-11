@@ -113,7 +113,7 @@ class Homepage extends StatelessWidget {
               textAlign: TextAlign.left,
             )),
         Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.only(top: 10.0),
           child: Container(
             height: 100,
             width: double.infinity,
