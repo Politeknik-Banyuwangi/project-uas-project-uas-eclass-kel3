@@ -112,10 +112,10 @@ class Homepage extends StatelessWidget {
             children: [
               Container(
                   height: 50,
-                  width: double.infinity,
+                  width: 330,
                   child: Card(
                     child: Column(
-                      // mainAxisSize: MainAxisSize.min,
+                      mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         const ListTile(
                           leading: Icon(Icons.album, size: 45),
