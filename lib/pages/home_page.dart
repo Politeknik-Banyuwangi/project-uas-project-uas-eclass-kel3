@@ -111,8 +111,8 @@ class Homepage extends StatelessWidget {
           child: Row(
             children: [
               Container(
-                  height: 200,
-                  width: 300,
+                  height: 150,
+                  width: 310,
                   child: Card(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
