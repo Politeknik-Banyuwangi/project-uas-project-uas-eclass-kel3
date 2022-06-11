@@ -71,24 +71,6 @@ class Homepage extends StatelessWidget {
                       MaterialButton(
                         onPressed: () {},
                         color: Colors.white,
-                        textColor: Colors.blue,
-                        child: Icon(
-                          Icons.gamepad,
-                          size: 20,
-                        ),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Game", style: TextStyle(fontSize: 17)))
-                    ],
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
                         textColor: Colors.red,
                         child: Icon(
                           Icons.money_outlined,
