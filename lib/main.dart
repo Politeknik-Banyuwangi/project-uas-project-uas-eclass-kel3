@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projectuas/routes/main_routes.dart';
+import 'package:projectuas/pages/main_pages.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,8 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: buildRouter(context),
-      initialRoute: '/splash',
+      home: MainPage(),
     );
   }
 }

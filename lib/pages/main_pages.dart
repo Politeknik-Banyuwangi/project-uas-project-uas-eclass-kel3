@@ -1,48 +1,67 @@
+import 'package:fancy_bar/fancy_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:projectuas/themes/themes.dart';
 
 class MainPage extends StatefulWidget {
-  MainPage({Key? key}) : super(key: key);
+  MainPage({
+    Key? key,
+  }) : super(key: key);
 
   @override
-  State<MainPage> createState() => MainPageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
-class MainPageState extends State<MainPage> {
-  int _selectedNavbar = 0;
+class _MyHomePageState extends State<MainPage> {
+  int _counter = 0;
 
-  void _changeSelectedNavbar(int idx) {
+  void _incrementCounter() {
     setState(() {
-      _selectedNavbar = idx;
+      _counter++;
     });
   }
-
-  final List<Widget> page = [];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: page[_selectedNavbar],
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
+      bottomNavigationBar: FancyBottomBar(
+        items: [
+          FancyItem(
+            textColor: primaryYellowColor,
+            title: 'Home',
             icon: Icon(Icons.home),
-            label: 'Home',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.qr_code),
-            label: 'Scan',
+          FancyItem(
+            textColor: primaryYellowColor,
+            title: 'Kelas',
+            icon: Icon(Icons.assignment),
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
+          FancyItem(
+            textColor: primaryYellowColor,
+            title: 'Absen',
+            icon: Icon(Icons.document_scanner_outlined),
+          ),
+          FancyItem(
+            textColor: primaryYellowColor,
+            title: 'Tugas',
+            icon: Icon(Icons.check_box),
           ),
         ],
-        currentIndex: _selectedNavbar,
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: kPrimaryColor,
-        unselectedItemColor: kGreyColor1,
-        showUnselectedLabels: true,
-        onTap: _changeSelectedNavbar,
+        onItemSelected: (index) {
+          print(index);
+        },
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+            ),
+          ],
+        ),
       ),
     );
   }
