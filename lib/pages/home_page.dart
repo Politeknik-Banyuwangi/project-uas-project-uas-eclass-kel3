@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 // void main() => runApp(const MyApp());
 
-class homepage extends StatelessWidget {
-  const homepage({Key? key}) : super(key: key);
+class Homepage extends StatelessWidget {
+  const Homepage({Key? key}) : super(key: key);
 
   static const String _title = 'Flutter Code Sample';
 
