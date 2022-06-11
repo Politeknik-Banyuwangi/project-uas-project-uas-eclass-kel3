@@ -119,7 +119,7 @@ class Homepage extends StatelessWidget {
             width: double.infinity,
             child: Card(
               child: Column(
-                mainAxisSize: MainAxisSize.min,
+                // mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   const ListTile(
                     title: Text('Matematika'),
