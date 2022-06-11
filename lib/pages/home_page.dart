@@ -41,14 +41,11 @@ class Homepage extends StatelessWidget {
                         onPressed: () {},
                         color: Colors.white,
                         textColor: Colors.blue,
-                        child: Icon(
-                          Icons.gamepad,
-                          size: 20,
-                        ),
+                        child: Text("ENG", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Game", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Inggris", style: TextStyle(fontSize: 17)))
                     ],
                   )),
               Expanded(
@@ -59,14 +56,11 @@ class Homepage extends StatelessWidget {
                         onPressed: () {},
                         color: Colors.white,
                         textColor: Colors.red,
-                        child: Icon(
-                          Icons.money_outlined,
-                          size: 20,
-                        ),
+                        child: Text("IDN", style: TextStyle(fontSize: 17)),
                         padding: EdgeInsets.all(20),
                         shape: CircleBorder(),
                       ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Donasi", style: TextStyle(fontSize: 17)))
+                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Indonesia", style: TextStyle(fontSize: 17)))
                     ],
                   )),
             ],
