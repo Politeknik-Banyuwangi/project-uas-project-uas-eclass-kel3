@@ -164,7 +164,7 @@ class Homepage extends StatelessWidget {
                 left: 20.0,
                 top: 100.0,
                 child: Text(
-                  date.hour.toString() + ':' + date.minute.toString(),
+                  'asd',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 45.0,
