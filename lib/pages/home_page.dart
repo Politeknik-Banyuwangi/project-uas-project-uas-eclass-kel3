@@ -102,7 +102,7 @@ class Homepage extends StatelessWidget {
         Padding(
             padding: const EdgeInsets.only(top: 10.0),
             child: Text(
-              "Kelasku",
+              "Daftar Tugas",
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               textAlign: TextAlign.left,
             )),
@@ -152,42 +152,25 @@ class Homepage extends StatelessWidget {
                           ))
                     ],
                   )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.red,
-                        child: Text("IDN", style: TextStyle(fontSize: 17)),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(padding: const EdgeInsets.only(top: 10.0), child: Text("Bahasa Indonesia", style: TextStyle(fontSize: 15)))
-                    ],
-                  )),
-              Expanded(
-                  flex: 1,
-                  child: Column(
-                    children: [
-                      MaterialButton(
-                        onPressed: () {},
-                        color: Colors.white,
-                        textColor: Colors.orange,
-                        child: Text("FSA", style: TextStyle(fontSize: 17)),
-                        padding: EdgeInsets.all(20),
-                        shape: CircleBorder(),
-                      ),
-                      Padding(
-                          padding: const EdgeInsets.only(top: 10.0),
-                          child: Text(
-                            "Fisika",
-                            style: TextStyle(fontSize: 15),
-                            textAlign: TextAlign.center,
-                          ))
-                    ],
-                  )),
+              Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage('https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png'),
+                    fit: BoxFit.fitHeight,
+                  ),
+                ),
+              ),
+              Positioned(
+                left: 20.0,
+                top: 100.0,
+                child: Text(
+                  date.hour.toString() + ':' + date.minute.toString(),
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 45.0,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
