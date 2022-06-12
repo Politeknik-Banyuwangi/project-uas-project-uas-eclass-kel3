@@ -18,12 +18,16 @@ class Homepage extends StatelessWidget {
                     textAlign: TextAlign.left,
                   )),
               Expanded(
-                  flex: 1,
-                  child: Text(
-                    "Kelasku",
-                    style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.left,
-                  )),
+                flex: 1,
+                child: Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage('https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png'),
+                      fit: BoxFit.fitHeight,
+                    ),
+                  ),
+                ),
+              ),
             ])),
         Padding(
             padding: const EdgeInsets.only(top: 25, bottom: 5),
