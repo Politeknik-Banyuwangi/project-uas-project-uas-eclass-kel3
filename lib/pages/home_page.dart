@@ -118,7 +118,7 @@ class Homepage extends StatelessWidget {
             height: 100,
             width: double.infinity,
             child: Card(
-              color: Colors.grey,
+              color: Colors.green,
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Column(
@@ -145,7 +145,7 @@ class Homepage extends StatelessWidget {
             height: 100,
             width: double.infinity,
             child: Card(
-              color: Colors.grey,
+              color: Colors.blue,
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Column(
