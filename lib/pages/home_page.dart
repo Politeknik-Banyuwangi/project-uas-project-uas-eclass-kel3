@@ -8,7 +8,7 @@ class Homepage extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       children: [
         Padding(
-            padding: const EdgeInsets.only(top: 5, bottom: 5),
+            padding: const EdgeInsets.only(top: 10, bottom: 5),
             child: Row(children: [
               Expanded(
                   flex: 5,
