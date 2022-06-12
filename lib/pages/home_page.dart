@@ -13,7 +13,7 @@ class Homepage extends StatelessWidget {
               Expanded(
                   flex: 5,
                   child: Text(
-                    "Kelasku",
+                    "Hi, Fatwa Aulia",
                     style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   )),
