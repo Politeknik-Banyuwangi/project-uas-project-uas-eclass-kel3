@@ -11,14 +11,14 @@ class Homepage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 25, bottom: 5),
             child: Row(children: [
               Expanded(
-                  flex: 1,
+                  flex: 5,
                   child: Text(
                     "Kelasku",
                     style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left,
                   )),
               Expanded(
-                  flex: 5,
+                  flex: 1,
                   child: CircleAvatar(
                     radius: 25, // Image radius
                     backgroundImage: NetworkImage('https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png'),
