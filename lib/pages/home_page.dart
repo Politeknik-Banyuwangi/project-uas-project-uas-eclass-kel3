@@ -106,14 +106,14 @@ class Homepage extends StatelessWidget {
           ),
         ),
         Padding(
-            padding: const EdgeInsets.only(top: 25),
+            padding: const EdgeInsets.only(top: 25, bottom: 5),
             child: Text(
               "Daftar Tugas",
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               textAlign: TextAlign.left,
             )),
         Padding(
-          padding: const EdgeInsets.only(top: 10.0),
+          padding: const EdgeInsets.only(top: 5),
           child: Container(
             height: 100,
             width: double.infinity,
@@ -140,7 +140,7 @@ class Homepage extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 10.0),
+          padding: const EdgeInsets.only(top: 5),
           child: Container(
             height: 100,
             width: double.infinity,
