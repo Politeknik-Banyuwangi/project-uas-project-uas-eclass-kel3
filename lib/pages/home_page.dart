@@ -9,6 +9,24 @@ class Homepage extends StatelessWidget {
       children: [
         Padding(
             padding: const EdgeInsets.only(top: 25, bottom: 5),
+            child: Row(children: [
+              Expanded(
+                  flex: 1,
+                  child: Text(
+                    "Kelasku",
+                    style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.left,
+                  )),
+              Expanded(
+                  flex: 1,
+                  child: Text(
+                    "Kelasku",
+                    style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.left,
+                  )),
+            ])),
+        Padding(
+            padding: const EdgeInsets.only(top: 25, bottom: 5),
             child: Text(
               "Kelasku",
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
