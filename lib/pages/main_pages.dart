@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projectuas/themes/themes.dart';
 
 class MainPage extends StatefulWidget {
   MainPage({Key? key}) : super(key: key);
@@ -9,10 +10,6 @@ class MainPage extends StatefulWidget {
 
 class MainPageState extends State<MainPage> {
   int _selectedNavbar = 0;
-
-  get kGreyColor1 => null;
-
-  get kPrimaryColor => null;
 
   void _changeSelectedNavbar(int idx) {
     setState(() {
@@ -43,8 +40,8 @@ class MainPageState extends State<MainPage> {
         ],
         currentIndex: _selectedNavbar,
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: kPrimaryColor,
-        unselectedItemColor: kGreyColor1,
+        selectedItemColor: primaryYellowColor,
+        unselectedItemColor: Colors.grey,
         showUnselectedLabels: true,
         onTap: _changeSelectedNavbar,
       ),
