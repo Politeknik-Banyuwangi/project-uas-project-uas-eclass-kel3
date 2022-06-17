@@ -33,7 +33,7 @@ class _SignInPagesState extends State<SignInPages> {
                 Padding(
                   padding: const EdgeInsets.only(top: 55.0),
                   child: Image(
-                    image: AssetImage('assets/logo_sman.png'),
+                    image: AssetImage('assets/logo_sman_1_cluring.png'),
                     width: 100.0,
                     fit: BoxFit.cover,
                   ),
