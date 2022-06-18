@@ -1,5 +1,6 @@
 import 'package:fancy_bar/fancy_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:projectuas/pages/login_page.dart';
 import 'package:projectuas/themes/themes.dart';
 
 class MainPage extends StatefulWidget {
@@ -19,6 +20,10 @@ class _MyHomePageState extends State<MainPage> {
       _counter++;
     });
   }
+
+  final List<Widget> page = [
+    LoginPage(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -50,19 +55,7 @@ class _MyHomePageState extends State<MainPage> {
           print(index);
         },
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-            ),
-          ],
-        ),
-      ),
+      body: page[0],
     );
   }
 }
