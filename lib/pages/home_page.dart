@@ -74,6 +74,8 @@ class HomePage extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 10.0),
                           child: Text(
                             "Bahasa Inggris",
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(fontSize: 15),
                             textAlign: TextAlign.center,
                           ))
