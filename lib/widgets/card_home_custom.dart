@@ -12,13 +12,13 @@ class CardHomeCustom extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 5),
         child: Card(
+          color: colors,
           child: Container(
             height: 100,
             width: double.infinity,
             alignment: Alignment.centerLeft,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: colors,
+              borderRadius: BorderRadius.circular(5),
             ),
             child: Column(
               children: [
