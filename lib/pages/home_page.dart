@@ -136,32 +136,10 @@ class HomePage extends StatelessWidget {
               subtitle: 'Matematika Aljabar',
               colors: primaryOrangeColor,
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 5),
-              child: Container(
-                height: 100,
-                width: double.infinity,
-                child: Card(
-                  color: Colors.blue,
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      children: [
-                        const ListTile(
-                          title: Text(
-                            'Bahasa Inggris',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
-                          ),
-                          subtitle: Text(
-                            'Simple Present',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
+            CardHomeCustom(
+              title: 'Bahasa Inggris',
+              subtitle: 'Simple Present',
+              colors: primaryDarkBlueColor,
             ),
           ],
         ));
