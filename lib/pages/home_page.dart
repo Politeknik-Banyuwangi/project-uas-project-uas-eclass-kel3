@@ -136,7 +136,7 @@ class HomePage extends StatelessWidget {
                 height: 100,
                 width: double.infinity,
                 child: Card(
-                  color: Colors.green,
+                  color: primaryOrangeColor,
                   child: Align(
                     alignment: Alignment.centerLeft,
                     child: Column(
