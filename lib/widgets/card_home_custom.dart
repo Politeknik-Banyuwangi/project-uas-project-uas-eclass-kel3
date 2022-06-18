@@ -13,9 +13,12 @@ class CardHomeCustom extends StatelessWidget {
         padding: const EdgeInsets.only(top: 5),
         child: Card(
           child: Container(
-            height: 150,
+            height: 100,
             width: double.infinity,
             alignment: Alignment.centerLeft,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+            ),
             color: colors,
             child: Column(
               children: [
@@ -25,6 +28,7 @@ class CardHomeCustom extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 20,
                       color: textWhiteGrey,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   subtitle: Text(
