@@ -128,7 +128,7 @@ class OnboardingPage extends StatelessWidget {
                     alignment: Alignment.center,
                     width: MediaQuery.of(context).size.width / 3,
                     child: Text(
-                      'Scrool Right',
+                      'SCROLL RIGHT',
                       style: GoogleFonts.getFont(
                         'Poppins',
                         fontSize: 10.0,
