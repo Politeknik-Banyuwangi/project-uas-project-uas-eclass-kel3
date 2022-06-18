@@ -136,33 +136,6 @@ class HomePage extends StatelessWidget {
                 height: 100,
                 width: double.infinity,
                 child: Card(
-                  color: primaryOrangeColor,
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      children: [
-                        const ListTile(
-                          title: Text(
-                            'Matematika',
-                            style: TextStyle(fontSize: 20, color: Colors.white),
-                          ),
-                          subtitle: Text(
-                            'Bangun Ruang',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 5),
-              child: Container(
-                height: 100,
-                width: double.infinity,
-                child: Card(
                   color: Colors.blue,
                   child: Align(
                     alignment: Alignment.centerLeft,
