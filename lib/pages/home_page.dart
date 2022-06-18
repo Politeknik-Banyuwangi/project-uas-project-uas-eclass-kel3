@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projectuas/themes/themes.dart';
+import 'package:projectuas/widgets/card_home_custom.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -122,6 +123,11 @@ class HomePage extends StatelessWidget {
                       )),
                 ],
               ),
+            ),
+            CardHomeCustom(
+              title: 'Matematika',
+              subtitle: 'Matematika Aljabar',
+              colors: primaryOrangeColor,
             ),
             Padding(
                 padding: const EdgeInsets.only(top: 25, bottom: 5),
