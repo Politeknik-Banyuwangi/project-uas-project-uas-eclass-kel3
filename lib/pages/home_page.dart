@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                           MaterialButton(
                             onPressed: () {},
                             color: Colors.white,
-                            textColor: Colors.green,
+                            textColor: textGrey,
                             child: Text("MTK", style: TextStyle(fontSize: 17)),
                             padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
@@ -62,7 +62,7 @@ class HomePage extends StatelessWidget {
                           MaterialButton(
                             onPressed: () {},
                             color: Colors.white,
-                            textColor: Colors.blue,
+                            textColor: textGrey,
                             child: Text("ENG", style: TextStyle(fontSize: 17)),
                             padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
                           MaterialButton(
                             onPressed: () {},
                             color: Colors.white,
-                            textColor: Colors.red,
+                            textColor: textGrey,
                             child: Text("IDN", style: TextStyle(fontSize: 17)),
                             padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
