@@ -51,7 +51,6 @@ class HomePage extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 10.0),
                           child: Text(
                             "Matematika",
-                            maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(fontSize: 15),
                             textAlign: TextAlign.center,
@@ -74,7 +73,6 @@ class HomePage extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 10.0),
                           child: Text(
                             "Bahasa Inggris",
-                            maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(fontSize: 15),
                             textAlign: TextAlign.center,
@@ -97,6 +95,7 @@ class HomePage extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 10.0),
                           child: Text(
                             "Bahasa Indonesia",
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(fontSize: 15),
                             textAlign: TextAlign.center,
                           ))
@@ -118,6 +117,7 @@ class HomePage extends StatelessWidget {
                           padding: const EdgeInsets.only(top: 10.0),
                           child: Text(
                             "Fisika",
+                            overflow: TextOverflow.ellipsis,
                             style: TextStyle(fontSize: 15),
                             textAlign: TextAlign.center,
                           ))
