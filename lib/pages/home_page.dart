@@ -7,7 +7,12 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: Text('Hi, Fatwa!'),
           actions: [
-            CircleAvatar(backgroundImage: NetworkImage('https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png')),
+            Padding(
+              padding: EdgeInsets.only(right: 10),
+              child: CircleAvatar(
+                backgroundImage: NetworkImage('https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png'),
+              ),
+            ),
           ],
         ),
         body: ListView(
