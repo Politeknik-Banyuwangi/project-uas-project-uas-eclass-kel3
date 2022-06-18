@@ -106,7 +106,7 @@ class HomePage extends StatelessWidget {
                           MaterialButton(
                             onPressed: () {},
                             color: Colors.white,
-                            textColor: Colors.orange,
+                            textColor: textWhiteGrey,
                             child: Text("FSA", style: TextStyle(fontSize: 17)),
                             padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
