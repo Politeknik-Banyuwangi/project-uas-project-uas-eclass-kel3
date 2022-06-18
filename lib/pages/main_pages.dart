@@ -1,6 +1,6 @@
 import 'package:fancy_bar/fancy_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:projectuas/pages/login_page.dart';
+import 'package:projectuas/pages/absensi_pages.dart';
 import 'package:projectuas/pages/home_page.dart';
 import 'package:projectuas/themes/themes.dart';
 
@@ -23,14 +23,16 @@ class _MyHomePageState extends State<MainPage> {
   }
 
   final List<Widget> page = [
-    LoginPage(),
     HomePage(),
+    AbsensiPages(),
+    HomePage(),
+    AbsensiPages(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: page[1],
+      body: page[_counter],
       bottomNavigationBar: FancyBottomBar(
         items: [
           FancyItem(
@@ -55,7 +57,10 @@ class _MyHomePageState extends State<MainPage> {
           ),
         ],
         onItemSelected: (index) {
-          print(index);
+          setState(() {
+            _counter = index;
+          });
+          print(_counter);
         },
       ),
     );
