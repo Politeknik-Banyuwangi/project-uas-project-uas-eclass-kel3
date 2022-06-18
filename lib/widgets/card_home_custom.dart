@@ -19,18 +19,20 @@ class CardHomeCustom extends StatelessWidget {
             color: colors,
             child: Column(
               children: [
-                Text(
-                  title,
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: textWhiteGrey,
+                ListTile(
+                  title: Text(
+                    title,
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: textWhiteGrey,
+                    ),
                   ),
-                ),
-                Text(
-                  subtitle,
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: textWhiteGrey,
+                  subtitle: Text(
+                    subtitle,
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: textWhiteGrey,
+                    ),
                   ),
                 ),
               ],
