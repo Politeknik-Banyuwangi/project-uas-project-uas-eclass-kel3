@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                             textColor: Colors.green,
                             child: Text("MTK", style: TextStyle(fontSize: 17)),
-                            padding: EdgeInsets.all(20),
+                            padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
                           ),
                           Padding(
