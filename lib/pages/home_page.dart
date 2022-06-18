@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: primaryYellowColor,
-          title: Text('Hi, Fatwa!'),
+          title: Text('Hi, Fatwa!', style: TextStyle(color: textBlack)),
           actions: [
             Padding(
               padding: EdgeInsets.only(right: 10),
