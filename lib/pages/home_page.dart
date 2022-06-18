@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:projectuas/themes/themes.dart';
 
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: primaryYellowColor,
           title: Text('Hi, Fatwa!'),
           actions: [
             Padding(
               padding: EdgeInsets.only(right: 10),
               child: CircleAvatar(
+                backgroundColor: Colors.grey,
                 backgroundImage: NetworkImage('https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png'),
               ),
             ),
