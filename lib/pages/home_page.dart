@@ -124,11 +124,6 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            CardHomeCustom(
-              title: 'Matematika',
-              subtitle: 'Matematika Aljabar',
-              colors: primaryOrangeColor,
-            ),
             Padding(
                 padding: const EdgeInsets.only(top: 25, bottom: 5),
                 child: Text(
@@ -136,6 +131,11 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.left,
                 )),
+            CardHomeCustom(
+              title: 'Matematika',
+              subtitle: 'Matematika Aljabar',
+              colors: primaryOrangeColor,
+            ),
             Padding(
               padding: const EdgeInsets.only(top: 5),
               child: Container(

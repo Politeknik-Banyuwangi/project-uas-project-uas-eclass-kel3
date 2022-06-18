@@ -12,8 +12,9 @@ class CardHomeCustom extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(top: 5),
         child: Container(
-          height: 200,
+          height: 150,
           width: double.infinity,
+          alignment: Alignment.centerLeft,
           child: Card(
             color: colors,
             child: Column(
@@ -21,7 +22,7 @@ class CardHomeCustom extends StatelessWidget {
                 Text(
                   title,
                   style: TextStyle(
-                    fontSize: 26,
+                    fontSize: 20,
                     color: textWhiteGrey,
                   ),
                 ),
