@@ -11,11 +11,11 @@ class CardHomeCustom extends StatelessWidget {
     return Material(
       child: Padding(
         padding: const EdgeInsets.only(top: 5),
-        child: Container(
-          height: 150,
-          width: double.infinity,
-          alignment: Alignment.centerLeft,
-          child: Card(
+        child: Card(
+          child: Container(
+            height: 150,
+            width: double.infinity,
+            alignment: Alignment.centerLeft,
             color: colors,
             child: Column(
               children: [
