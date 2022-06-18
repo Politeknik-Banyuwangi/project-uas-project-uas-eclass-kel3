@@ -18,8 +18,8 @@ class CardHomeCustom extends StatelessWidget {
             alignment: Alignment.centerLeft,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
+              color: colors,
             ),
-            color: colors,
             child: Column(
               children: [
                 ListTile(
