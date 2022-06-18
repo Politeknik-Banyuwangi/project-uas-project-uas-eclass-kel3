@@ -64,7 +64,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                             textColor: Colors.blue,
                             child: Text("ENG", style: TextStyle(fontSize: 17)),
-                            padding: EdgeInsets.all(20),
+                            padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
                           ),
                           Padding(
@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                             textColor: Colors.red,
                             child: Text("IDN", style: TextStyle(fontSize: 17)),
-                            padding: EdgeInsets.all(20),
+                            padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
                           ),
                           Padding(
@@ -108,7 +108,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                             textColor: Colors.orange,
                             child: Text("FSA", style: TextStyle(fontSize: 17)),
-                            padding: EdgeInsets.all(20),
+                            padding: EdgeInsets.all(30),
                             shape: CircleBorder(),
                           ),
                           Padding(
