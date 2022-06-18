@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
           ],
         ),
         body: ListView(
-          padding: const EdgeInsets.only(top: 15),
+          padding: const EdgeInsets.all(8),
           children: [
             Padding(
                 padding: const EdgeInsets.only(top: 25, bottom: 5),
