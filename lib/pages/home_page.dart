@@ -16,10 +16,10 @@ class HomePage extends StatelessWidget {
           ],
         ),
         body: ListView(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.only(top: 15),
           children: [
             Padding(
-                padding: const EdgeInsets.only(top: 20, bottom: 5),
+                padding: const EdgeInsets.only(top: 25, bottom: 5),
                 child: Text(
                   "Kelasku",
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
