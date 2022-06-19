@@ -24,8 +24,8 @@ class _MyHomePageState extends State<MainPage> {
 
   final List<Widget> page = [
     HomePage(),
-    AbsensiPages(),
     HomePage(),
+    AbsensiPages(),
     AbsensiPages(),
   ];
 
@@ -38,12 +38,12 @@ class _MyHomePageState extends State<MainPage> {
           FancyItem(
             textColor: primaryYellowColor,
             title: 'Home',
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home_rounded),
           ),
           FancyItem(
             textColor: primaryYellowColor,
             title: 'Kelas',
-            icon: Icon(Icons.assignment),
+            icon: Icon(Icons.groups_rounded),
           ),
           FancyItem(
             textColor: primaryYellowColor,
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MainPage> {
           FancyItem(
             textColor: primaryYellowColor,
             title: 'Tugas',
-            icon: Icon(Icons.check_box),
+            icon: Icon(Icons.import_contacts_rounded),
           ),
         ],
         onItemSelected: (index) {
