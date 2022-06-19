@@ -2,6 +2,7 @@ import 'package:fancy_bar/fancy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:projectuas/pages/absensi_pages.dart';
 import 'package:projectuas/pages/home_page.dart';
+import 'package:projectuas/services/users.dart';
 import 'package:projectuas/themes/themes.dart';
 
 class MainPage extends StatefulWidget {
@@ -15,6 +16,7 @@ class MainPage extends StatefulWidget {
 
 class _MyHomePageState extends State<MainPage> {
   int _counter = 0;
+  Users user1 = Users("siswa@gmail.com", "215211", "215211");
 
   void _incrementCounter() {
     setState(() {

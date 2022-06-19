@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:projectuas/pages/main_pages.dart';
+import 'package:projectuas/services/users.dart';
 import 'package:projectuas/themes/themes.dart';
-import 'package:projectuas/widgets/custom_button.dart';
 import 'package:projectuas/widgets/custom_check_box.dart';
+import 'package:projectuas/widgets/show_snackbar.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -12,12 +14,27 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  TextEditingController usernameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
+  Users users1 = Users("siswa@gmail.com", "215211", "215211");
   bool passwordVisible = false;
   bool passwordConfirmVisible = false;
   void togglePassword() {
     setState(() {
       passwordVisible = !passwordVisible;
     });
+  }
+
+  void passwordIsEmpty(String text) {
+    if (passwordController.text == '' || text == '') {
+      showSnackBar(context, "Password tidak boleh kosong");
+    }
+  }
+
+  void usernameIsEmpty(String text) {
+    if (usernameController.text == '' || text == '') {
+      showSnackBar(context, "Username tidak boleh kosong");
+    }
   }
 
   @override
@@ -88,9 +105,10 @@ class _LoginPageState extends State<LoginPage> {
                       color: textWhiteGrey,
                       borderRadius: BorderRadius.circular(14)),
                   child: TextFormField(
+                    controller: usernameController,
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.mail_rounded),
-                      hintText: 'Email',
+                      prefixIcon: Icon(Icons.person_rounded),
+                      hintText: 'Username',
                       hintStyle: heading6.copyWith(color: textGrey),
                       border: OutlineInputBorder(borderSide: BorderSide.none),
                     ),
@@ -106,6 +124,7 @@ class _LoginPageState extends State<LoginPage> {
                     borderRadius: BorderRadius.circular(14),
                   ),
                   child: TextFormField(
+                    controller: passwordController,
                     obscureText: !passwordVisible,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.lock_rounded),
@@ -153,10 +172,49 @@ class _LoginPageState extends State<LoginPage> {
             child: Container(
               width: 146.0,
               height: 48.0,
-              child: CustomPrimaryButton(
-                buttonColor: primaryYellowColor,
-                textValue: 'Login',
-                textColor: Colors.black,
+              child: Material(
+                borderRadius: BorderRadius.circular(14),
+                elevation: 0,
+                child: Container(
+                  height: 56,
+                  decoration: BoxDecoration(
+                    color: primaryYellowColor,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: Material(
+                    color: Colors.transparent,
+                    child: InkWell(
+                      onTap: () {
+                        // check apakah field username dan password kosong
+                        if (usernameController.text == "") {
+                          showSnackBar(context, "username tidak boleh kosong");
+                        } else if (passwordController.text == "") {
+                          showSnackBar(context, "Password tidak boleh kosong");
+                        } else {
+                          // Autentikasi input dengan user dari API
+                          if (usernameController.text == users1.username &&
+                              passwordController.text == users1.password) {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => MainPage(),
+                                ));
+                          } else {
+                            showSnackBar(
+                                context, "Username atau password salah!");
+                          }
+                        }
+                      },
+                      borderRadius: BorderRadius.circular(14),
+                      child: Center(
+                        child: Text(
+                          'Login',
+                          style: heading5.copyWith(color: textBlack),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
