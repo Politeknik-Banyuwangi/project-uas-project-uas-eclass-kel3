@@ -84,9 +84,9 @@ class Onboarding1 extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
-            height: 60.0,
+            height: 50.0,
             alignment: Alignment.center,
-            color: primaryLightBlueColor,
+            color: Colors.transparent,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -103,40 +103,37 @@ class Onboarding1 extends StatelessWidget {
                     ),
                   ),
                 ),
-                Container(
-                  margin: EdgeInsets.symmetric(
-                    vertical: 10.0,
+                Material(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15),
+                    bottomLeft: Radius.circular(15),
                   ),
-                  alignment: Alignment.center,
-                  width: MediaQuery.of(context).size.width / 2,
-                  decoration: BoxDecoration(
+                  child: Container(
+                    width: MediaQuery.of(context).size.width / 2,
+                    decoration: BoxDecoration(
+                      color: primaryYellowColor,
                       borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10.0),
-                        bottomLeft: Radius.circular(10.0),
-                      ),
-                      color: primaryYellowColor),
-                  child: ElevatedButton(
-                    child: Text(
-                      'Lewati',
-                      style: GoogleFonts.getFont(
-                        'Inter',
-                        fontSize: 16.0,
-                        fontWeight: FontWeight.bold,
-                        color: textBlack,
+                        topLeft: Radius.circular(15),
+                        bottomLeft: Radius.circular(15),
                       ),
                     ),
-                    onPressed: (() {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => LoginPage(),
-                          ));
-                    }),
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.transparent,
-                      elevation: 0,
-                      maximumSize: Size.fromWidth(
-                          MediaQuery.of(context).size.width / 3 - 8),
+                    child: Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, '/login');
+                        },
+                        borderRadius: BorderRadius.circular(30),
+                        child: Center(
+                          child: Text(
+                            'Lewati',
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.black),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ),

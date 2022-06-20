@@ -6,6 +6,7 @@ import 'package:projectuas/services/users.dart';
 import 'package:projectuas/themes/themes.dart';
 
 class MainPage extends StatefulWidget {
+  String initalRoute = '/home';
   MainPage({
     Key? key,
   }) : super(key: key);
