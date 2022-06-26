@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:projectuas/pages/onboarding_page.dart';
 import 'package:projectuas/routes/main_routes.dart';
 
 void main() => runApp(MyApp());

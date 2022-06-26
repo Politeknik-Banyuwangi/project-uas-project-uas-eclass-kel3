@@ -2,7 +2,6 @@ import 'package:fancy_bar/fancy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:projectuas/pages/absensi_pages.dart';
 import 'package:projectuas/pages/home_page.dart';
-import 'package:projectuas/services/users.dart';
 import 'package:projectuas/themes/themes.dart';
 
 class MainPage extends StatefulWidget {
