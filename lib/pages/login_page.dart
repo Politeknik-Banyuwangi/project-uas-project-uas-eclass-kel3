@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:projectuas/pages/main_pages.dart';
@@ -16,7 +18,6 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  Users users1 = Users("siswa@gmail.com", "215211", "215211");
   bool passwordVisible = false;
   bool passwordConfirmVisible = false;
   void togglePassword() {
@@ -184,7 +185,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: Material(
                     color: Colors.transparent,
                     child: InkWell(
-                      onTap: () {
+                      onTap: () async {
                         // check apakah field username dan password kosong
                         if (usernameController.text == "") {
                           showSnackBar(context, "username tidak boleh kosong");
@@ -192,16 +193,20 @@ class _LoginPageState extends State<LoginPage> {
                           showSnackBar(context, "Password tidak boleh kosong");
                         } else {
                           // Autentikasi input dengan user dari API
-                          if (usernameController.text == users1.username &&
-                              passwordController.text == users1.password) {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => MainPage(),
-                                ));
+                          var data = {
+                            'username': usernameController.text,
+                            'password': passwordController.text,
+                          };
+                          // memanggil service API kemudian ditampung ke dalam variabel reponse dalam bentuk byte
+                          var response = await UsersServices().connectAPI(data);
+                          // data response diubah ke dalam json dari konversi byte to string kemudian ditampung ke dalam varibel body
+                          var body =
+                              jsonDecode(await response.stream.bytesToString());
+                          print(jsonEncode(body['data']));
+                          if (response.statusCode == 200) {
+                            Navigator.pushNamed(context, '/home');
                           } else {
-                            showSnackBar(
-                                context, "Username atau password salah!");
+                            showSnackBar(context, body['message']);
                           }
                         }
                       },
