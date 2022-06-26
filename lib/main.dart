@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projectuas/pages/onboarding_page.dart';
+import 'package:projectuas/routes/main_routes.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,7 +10,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: OnboardingPage(),
+      routes: buildRouter(context),
+      initialRoute: '/',
     );
   }
 }
