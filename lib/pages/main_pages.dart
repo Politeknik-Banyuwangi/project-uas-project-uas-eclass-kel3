@@ -37,24 +37,40 @@ class _MyHomePageState extends State<MainPage> {
       bottomNavigationBar: FancyBottomBar(
         items: [
           FancyItem(
-            textColor: primaryYellowColor,
+            textColor: primaryDarkBlueColor,
             title: 'Home',
-            icon: Icon(Icons.home_rounded),
+            icon: Icon(
+              Icons.home_rounded,
+              color: textGrey,
+              size: 30.0,
+            ),
           ),
           FancyItem(
-            textColor: primaryYellowColor,
+            textColor: primaryDarkBlueColor,
             title: 'Kelas',
-            icon: Icon(Icons.groups_rounded),
+            icon: Icon(
+              Icons.groups_rounded,
+              color: textGrey,
+              size: 30.0,
+            ),
           ),
           FancyItem(
-            textColor: primaryYellowColor,
+            textColor: primaryDarkBlueColor,
             title: 'Absen',
-            icon: Icon(Icons.document_scanner_outlined),
+            icon: Icon(
+              Icons.document_scanner_outlined,
+              color: textGrey,
+              size: 30.0,
+            ),
           ),
           FancyItem(
-            textColor: primaryYellowColor,
+            textColor: primaryDarkBlueColor,
             title: 'Tugas',
-            icon: Icon(Icons.import_contacts_rounded),
+            icon: Icon(
+              Icons.import_contacts_rounded,
+              color: textGrey,
+              size: 30.0,
+            ),
           ),
         ],
         onItemSelected: (index) {
