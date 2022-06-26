@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:projectuas/themes/themes.dart';
 import 'package:projectuas/widgets/card_home_custom.dart';
 
@@ -7,14 +8,29 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: primaryYellowColor,
-          title: Text('Hi, Fatwa!', style: TextStyle(color: textBlack)),
+          backgroundColor: primaryDarkBlueColor,
+          title: Text(
+            'Hi, Fatwa!',
+            style: GoogleFonts.getFont(
+              'Inter',
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: textWhite,
+            ),
+          ),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.logout_rounded),
+          ),
           actions: [
             Padding(
               padding: EdgeInsets.only(right: 10),
               child: CircleAvatar(
-                backgroundColor: Colors.grey,
-                backgroundImage: NetworkImage('https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png'),
+                backgroundColor: Colors.white,
+                backgroundImage: NetworkImage(
+                    'https://i.pinimg.com/originals/b9/0e/88/b90e88536d1fa4e543b438ea95f70316.png'),
               ),
             ),
           ],
