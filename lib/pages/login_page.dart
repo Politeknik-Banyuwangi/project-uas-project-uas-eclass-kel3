@@ -8,7 +8,7 @@ import 'package:projectuas/widgets/custom_check_box.dart';
 import 'package:projectuas/widgets/show_snackbar.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  String initalRoute = 'login';
 
   @override
   State<LoginPage> createState() => _LoginPageState();

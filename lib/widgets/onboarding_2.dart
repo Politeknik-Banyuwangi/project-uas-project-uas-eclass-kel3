@@ -72,7 +72,7 @@ class Onboarding2 extends StatelessWidget {
             width: double.infinity,
             height: 60.0,
             alignment: Alignment.center,
-            color: primaryOrangeColor,
+            color: Colors.transparent,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

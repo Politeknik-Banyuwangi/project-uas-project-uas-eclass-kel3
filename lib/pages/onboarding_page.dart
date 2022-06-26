@@ -3,10 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:projectuas/widgets/onboarding_1.dart';
 import 'package:projectuas/widgets/onboarding_2.dart';
 import 'package:projectuas/widgets/onboarding_3.dart';
-// import 'package:projectuas/widgets/onboarding_1.dart';
 
 class OnboardingPage extends StatefulWidget {
-  const OnboardingPage({Key? key}) : super(key: key);
+  String initialRoute = '/';
 
   @override
   State<OnboardingPage> createState() => _OnboardingPageState();
