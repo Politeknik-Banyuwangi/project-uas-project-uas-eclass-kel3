@@ -16,7 +16,6 @@ class MainPage extends StatefulWidget {
 
 class _MyHomePageState extends State<MainPage> {
   int _counter = 0;
-  Users user1 = Users("siswa@gmail.com", "215211", "215211");
 
   void _incrementCounter() {
     setState(() {
