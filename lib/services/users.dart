@@ -1,35 +1,19 @@
-class Users {
-  late final String id,
-      pictures,
-      name,
-      email,
-      username,
-      password,
-      last_login,
-      created_at,
-      update_at;
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
-  Users(String email, username, password) {
-    this.id = "14";
-    this.name = "Siswa 1";
-    this.email = "siswa@gmail.com";
-    this.username = "215211";
-    this.password = "215211";
-  }
+class UsersServices with ChangeNotifier {
+  Future<http.StreamedResponse> connectAPI(data) async {
+    Uri url = Uri.parse("https://api-kel3.analistek.com/login");
+    // request login menggunakan multipartrequest dengan method post
+    var request = http.MultipartRequest('POST', url);
+    request.fields.addAll({
+      'username': data['username'],
+      'password': data['password'],
+    });
 
-  String errorUsernameMessage(String username) {
-    if (username != this.username) {
-      return "Username tidak ditemukan";
-    } else {
-      return "Successful";
-    }
-  }
+    // hasil response ditampung ke dalam variabel response dalam bentuk byte
+    http.StreamedResponse response = await request.send();
 
-  String errorPasswordMessage(String password) {
-    if (password != this.password) {
-      return "password salah";
-    } else {
-      return "Successful";
-    }
+    return response;
   }
 }
